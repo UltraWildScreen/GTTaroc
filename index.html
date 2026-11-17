@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-theme="light">
 <head>
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#eef3f1">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#eef3f1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="GTTaroc">
 <title>GTTaroc</title>
 <style>
 :root{--bg:#f0f0f0;--card:#fff;--ink:#14231f;--accent:#2d4c98;--btn:#fbdf00;--btn-ink:#2a1500;--grey:#d2d8eb;--band:#c62828;--bandink:#fff;box-sizing:border-box}
@@ -104,5 +107,6 @@ input:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline
   });
 })();
 </script>
+<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});</script>	
 </body>
 </html>
