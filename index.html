@@ -21,7 +21,7 @@ h1{font-size:30px;margin:12px 20px 16px}
 .top{display:flex;align-items:center;gap:12px;color:var(--accent);font-size:18px;font-weight:600;margin-bottom:6px}
 .x{background:var(--grey);border:0;border-radius:0 28px 28px 0;width:70px;height:48px;font-size:25px;font-weight:100;color:var(--accent);margin-left:-16px;cursor:pointer;align-items:center;justify-content:center;line-height:1;padding:0}
 .top span{flex:1;text-align:center;margin-right:54px}
-.card{background:var(--card);border-radius:10px;padding:10px 16px;margin:0 0 12px;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:56px}
+.card{background:var(--card);border-radius:10px;padding:6px 16px;margin:0 0 12px;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:56px}
 .card .l{color:var(--accent);text-transform:uppercase;font-size:12px;font-weight:600;flex:0 0 auto}
 .card .v{text-align:right;font-size:12px;font-weight:600;word-break:break-word}
 label{display:block;color:var(--accent);margin:14px 0 6px;font-size:15px}
@@ -30,6 +30,7 @@ input:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline
 .btn{display:block;width:100%;border:0;border-radius:10px;padding:10px 20px;font-size:18px;font-weight:750;margin-top:12px;cursor:pointer}
 .main{background:var(--btn);color:var(--btn-ink)}
 .sec{background:var(--grey);color:var(--accent)}
+.gra{background:#d0d0d0;color:var(--accent)}
 .toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 20px);transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:12px;font-size:15px;max-width:90%;display:none;z-index:30}
 .hide{display:none}
 /* Schermata biglietto: intestazione e pulsanti fissi, elenco scorrevole */
@@ -56,7 +57,7 @@ input:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline
   <h1>DAILY</h1>
   <div id="cards"></div>
   <button class="btn main" data-sim>CONVALIDA</button>
-  <button class="btn sec" data-sim>AUTOCONVALIDA</button>
+  <button class="btn gra" data-sim>AUTOCONVALIDA</button>
 </section>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
